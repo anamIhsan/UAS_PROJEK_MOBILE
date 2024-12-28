@@ -1,0 +1,40 @@
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:overScrollMode="ifContentScrolls"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonPertandingan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertandingan"
+            android:textColor="@color/white"
+            android:background="@drawable/button_rounded"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+        <Button
+            android:id="@+id/buttonKlasemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klasemen"
+            android:textColor="@color/white"
+            android:background="@drawable/button_rounded"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+
+        <Button
+            android:id="@+id/buttonPemain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:text="Pemain"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</HorizontalScrollView>

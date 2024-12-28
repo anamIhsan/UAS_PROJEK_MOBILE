@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.UTS_PROJEK" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.UTS_PROJEK.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.UTS_PROJEK.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.UTS_PROJEK.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

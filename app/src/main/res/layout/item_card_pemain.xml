@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout untuk setiap item pemain menggunakan LinearLayout dengan orientasi vertikal -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/card"
+    android:orientation="vertical"> <!-- Row -->
+    <!-- Margin kanan untuk memberikan jarak -->
+    <!-- Margin di sisi kiri dan kanan -->
+    <!-- Lebar layout ditetapkan menjadi 120dp -->
+    <!-- Tinggi layout menyesuaikan dengan konten di dalamnya -->
+    <!-- Margin bawah untuk memberi ruang antar item -->
+    <!-- Mengatur latar belakang menggunakan drawable "card" -->
+    <!-- Mengatur orientasi layout menjadi vertikal -->
+
+    <!-- ImageView untuk menampilkan foto pemain -->
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"/>
+    <!-- ID untuk referensi dalam kode -->
+    <!-- Latar belakang dengan sudut melingkar -->
+    <!-- Lebar ImageView menyesuaikan dengan lebar parent -->
+    <!-- Tinggi ImageView ditetapkan menjadi 120dp -->
+
+    <!-- LinearLayout untuk menampung informasi pemain -->
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:dividerPadding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Menambahkan padding di dalam LinearLayout -->
+        <!-- Mengatur orientasi menjadi vertikal -->
+        <!-- Padding untuk pembatas (divider) -->
+        <!-- Lebar LinearLayout menyesuaikan dengan lebar parent -->
+        <!-- Tinggi LinearLayout disesuaikan dengan konten di dalamnya -->
+
+        <!-- TextView untuk menampilkan nama pemain -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <!-- ID untuk referensi dalam kode -->
+        <!-- Lebar disesuaikan dengan konten -->
+        <!-- Tinggi disesuaikan dengan konten -->
+        <!-- Mengatur teks menjadi tebal -->
+
+        <!-- TextView untuk menampilkan posisi pemain -->
+        <TextView
+            android:id="@+id/textViewPosisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"/>
+        <!-- ID untuk referensi dalam kode -->
+        <!-- Lebar disesuaikan dengan konten -->
+        <!-- Tinggi disesuaikan dengan konten -->
+        <!-- Mengatur teks dengan gaya normal -->
+
+        <!-- LinearLayout untuk menampung logo klub dan nama klub -->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Margin atas untuk memberi jarak -->
+            <!-- Mengatur orientasi menjadi horizontal -->
+            <!-- Lebar disesuaikan dengan lebar parent -->
+            <!-- Tinggi disesuaikan dengan tinggi parent -->
+
+            <!-- ImageView untuk menampilkan logo klub -->
+            <ImageView
+                android:id="@+id/imageViewGclub"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_corners"
+                android:layout_width="25dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewNclub"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!-- ID untuk referensi dalam kode -->
+            <!-- Memposisikan teks di tengah secara vertikal -->
+            <!-- Lebar disesuaikan dengan konten -->
+            <!-- Tinggi disesuaikan dengan konten -->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

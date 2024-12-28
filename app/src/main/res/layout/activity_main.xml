@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout utama menggunakan LinearLayout dengan orientasi vertikal -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <!-- Lebar layout disesuaikan dengan lebar layar -->
+    <!-- Tinggi layout disesuaikan dengan tinggi layar -->
+    <!-- Mengatur orientasi layout menjadi vertikal -->
+    <!-- Memastikan layout sesuai dengan batas jendela sistem -->
+
+
+    <!-- Menyertakan layout navbar yang sudah didefinisikan sebelumnya -->
+    <include layout="@layout/navbar"/>
+
+    <!-- TextView untuk menampilkan judul "Pertandingan" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Pertandingan"
+        />
+    <!-- Lebar TextView disesuaikan dengan konten -->
+    <!-- Tinggi TextView disesuaikan dengan konten -->
+    <!-- Memposisikan TextView di tengah secara horizontal -->
+    <!-- Mengatur teks menjadi tebal -->
+    <!-- Menambahkan margin bawah untuk memberi ruang -->
+    <!-- Teks yang ditampilkan -->
+
+    <!-- ScrollView untuk memungkinkan konten di dalamnya dapat digulir -->
+    <ScrollView
+        android:overScrollMode="ifContentScrolls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Mengizinkan efek overscroll jika ada konten yang bisa digulir -->
+        <!-- Lebar ScrollView disesuaikan dengan lebar layar -->
+        <!-- Tinggi ScrollView disesuaikan dengan tinggi layar -->
+
+        <!-- LinearLayout sebagai wadah untuk konten yang dapat digulir -->
+        <LinearLayout
+            android:id="@+id/linearLayoutCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical"> <!-- Column utama -->
+            <!-- ID untuk referensi dalam kode -->
+            <!-- Lebar LinearLayout disesuaikan dengan lebar layar -->
+            <!-- Tinggi LinearLayout disesuaikan dengan tinggi layar -->
+            <!-- Margin horizontal untuk memberi ruang di sisi -->
+            <!-- Mengatur orientasi LinearLayout menjadi vertikal -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout utama menggunakan LinearLayout dengan orientasi vertikal -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="always"
+    android:layout_height="match_parent">
+    <!-- Mengatur lebar layout agar sesuai dengan lebar layar -->
+    <!-- Menyesuaikan layout dengan jendela sistem -->
+    <!-- Mengizinkan efek overscroll selalu aktif -->
+    <!-- Mengatur tinggi layout agar sesuai dengan tinggi layar -->
+
+    <!-- Menyertakan layout navbar yang telah didefinisikan sebelumnya -->
+    <include layout="@layout/navbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Klasemen"
+        />
+    <!-- Lebar TextView disesuaikan dengan konten yang ada -->
+    <!-- Tinggi TextView disesuaikan dengan konten yang ada -->
+    <!-- Memposisikan TextView di tengah secara horizontal -->
+    <!-- Mengatur gaya teks menjadi tebal -->
+    <!-- Menambahkan margin di bawah untuk memberi ruang -->
+    <!-- Teks yang akan ditampilkan -->
+
+
+    <!-- ScrollView untuk memungkinkan konten di dalamnya dapat digulir -->
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:overScrollMode="ifContentScrolls">
+        <!-- Tinggi ScrollView sesuai dengan tinggi layar -->
+        <!-- Lebar ScrollView sesuai dengan lebar layar -->
+        <!-- Mengizinkan efek overscroll jika ada konten yang dapat digulir -->
+
+        <!-- HorizontalScrollView untuk scrolling secara horizontal -->
+        <HorizontalScrollView
+            android:overScrollMode="ifContentScrolls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Mengizinkan efek overscroll jika konten bisa digulir -->
+            <!-- Lebar HorizontalScrollView disesuaikan dengan lebar layar -->
+            <!-- Tinggi HorizontalScrollView disesuaikan dengan konten yang ada -->
+
+            <!-- TableLayout untuk menampilkan tabel klasemen -->
+            <TableLayout
+                android:padding="10dp"
+                android:id="@+id/tableKlasemen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <!-- Menambahkan padding di dalam TableLayout untuk ruang tambahan -->
+                <!-- ID yang digunakan untuk referensi dalam kode -->
+                <!-- Lebar TableLayout disesuaikan dengan lebar layar -->
+                <!-- Tinggi TableLayout disesuaikan dengan konten yang ada -->
+                <!-- Mengatur agar kolom kedua melebar sesuai ruang yang tersedia -->
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
